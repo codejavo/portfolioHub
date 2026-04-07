@@ -1,0 +1,164 @@
+/* --- Configurações Gerais --- */
+:root {
+    --crimson: #DC143C;
+    --dark-grey: #2d2d2d;
+    --light-grey: #f4f4f4;
+    --text-color: #444;
+    --bg-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    font-weight: 400;
+    /* Regular como padrão */
+}
+
+/* --- Layout --- */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+section {
+    padding: 60px 0;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #eee;
+    margin: 20px 0;
+}
+
+/* --- Tipografia --- */
+h1,
+h2,
+h3 {
+    font-weight: 700;
+    /* Bold para títulos */
+    color: var(--dark-grey);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: var(--crimson);
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* Classe auxiliar para textos menos importantes ou legendas */
+.thin {
+    font-weight: 300;
+}
+
+/* Estilo para Citações/Recomendações */
+blockquote {
+    font-weight: 300;
+    font-style: italic;
+    border-left: 4px solid var(--crimson);
+    padding-left: 20px;
+    margin: 40px 0;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* --- Cabeçalho e Navegação --- */
+header {
+    background: var(--dark-grey);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--crimson);
+}
+
+/* --- Componentes Específicos --- */
+
+/* Imagem de Perfil */
+#perfil img {
+    border-radius: 50%;
+    border: 3px solid var(--crimson);
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* Itens de Currículo e Projetos */
+.projeto-item,
+article {
+    margin-bottom: 30px;
+}
+
+/* Botões e Links */
+a {
+    color: var(--crimson);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 40px;
+    font-weight: 300;
+    font-size: 0.8rem;
+    background: var(--light-grey);
+}
+
+/* --- Responsividade --- */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
